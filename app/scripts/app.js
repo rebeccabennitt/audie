@@ -19,7 +19,7 @@
 	     		})
 	     		.state('collection', {
 		     		url:'/collection',
-		     		controller: 'collectionctrl as collection',
+		     		controller: 'CollectionCtrl as collection',
 		     		templateUrl: '/templates/collection.html'
 	     		});
      }
@@ -29,4 +29,3 @@
          .config(config);
  })();
 
-;

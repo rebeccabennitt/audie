@@ -1,9 +1,9 @@
 (function() {
      function LandingCtrl() {
-	     this.heroTitle = "Turn the Music Up!";
+	     this.heroTitle = "give your ears some love";
      }
 
      angular
-         .module('blocJams')
+         .module('audie')
          .controller('LandingCtrl', LandingCtrl);
  })();
