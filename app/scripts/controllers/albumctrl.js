@@ -1,10 +1,9 @@
 (function() {
-     function AlbumCtrl(fixtures, SongPlayer) {
+     function AlbumCtrl(Fixtures) {
 	        this.albumData = Fixtures.getAlbum();
-	        this.songPlayer = SongPlayer;
 	        }
 
      angular
          .module('audie')
-         .controller('AlbumCtrl', ['Fixtures', 'SongPlayer', AlbumCtrl]);
-         })();
+         .controller('AlbumCtrl', ['Fixtures', AlbumCtrl]);
+ })();
