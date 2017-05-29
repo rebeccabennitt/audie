@@ -1,20 +1,11 @@
+
 (function() {
-<<<<<<< HEAD
-  function AlbumCtrl() {
-  	this.albumData = albumPicasso;
+  function AlbumCtrl(Fixtures, SongPlayer) {
+  	this.albumData = Fixtures.getAlbum();
+  	this.songPlayer = SongPlayer;
   }
 
   angular
-    .module('audie')
-    .controller('AlbumCtrl', AlbumCtrl);
+    .module('blocJams')
+    .controller('AlbumCtrl', ['Fixtures', 'SongPlayer', AlbumCtrl]);
 })();
-=======
-     function AlbumCtrl(Fixtures) {
-	        this.albumData = Fixtures.getAlbum();
-	        }
-
-     angular
-         .module('audie')
-         .controller('AlbumCtrl', ['Fixtures', AlbumCtrl]);
- })();
->>>>>>> master
